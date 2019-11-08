@@ -6,6 +6,10 @@ using namespace std;
 
 class Solution {
 public:
+    int gcd(int a,int b)
+    {
+        return b==0?a:gcd(b,a%b);
+    } 
     bool hasGroupsSizeX(vector<int>& deck) {
         unordered_map<int, int> ump;
         
